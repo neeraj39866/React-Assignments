@@ -1,38 +1,196 @@
-.App {
-  text-align: center;
+.main-div {
+  background-color: #e0f4fb;
+  height: 100vh;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px 1px rgb(203, 217, 242);
+  height: 30px;
+  margin-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.buttons {
+  float: right;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  color: red;
+  padding: 6px 15px;
+  border-radius: 3px;
+  border-color: #0d73b7;
+  cursor: pointer;
+}
+
+.next-button {
+  background-color: #0d73b7;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cancel-button {
+  color: #5baac7;
+  background-color: white;
+  margin-right: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-procedure {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px 1px rgb(203, 217, 242);
+  min-height: 400px;
+  margin-top: 25px;
+}
+
+.procedure {
+  font-size: 20px;
+  color: rgb(90, 89, 89);
+  padding-left: 30px;
+  padding-bottom: 15px;
+}
+
+.no-record {
+  text-align: center;
+  border-top: 1px solid #e3e0e0;
+  border-bottom: 1px solid #e3e0e0;
+  color: grey;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  margin-top: 25px;
+}
+
+.membership,
+.treatment,
+.wallet-amount,
+.product {
+  background-color: white;
+  margin-right: 20px;
+  min-height: 400px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px 1px rgb(203 217 242);
+}
+
+.heading {
+  font-size: 20px;
+  color: rgb(90, 89, 89);
+  padding-right: 20px;
+  float: left;
+  height: 50px;
+}
+
+.wallet-wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr;
+  margin-top: 25px;
+}
+
+.wallet-amount,
+.product {
+  font-size: 20px;
+  color: rgb(90, 89, 89);
+  padding-right: 20px;
+  float: left;
+  height: 50px;
+  padding: '20px'
+}
+
+.wallet {
+  width: 100%;
+  border-bottom: 1px solid #e3e0e0;
+}
+
+.cost {
+  padding: 20px;
+  margin-top: 60px;
+  font-size: smaller;
+  font-weight: bolder;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 15px;
+}
+
+.history {
+  padding: 17px;
+  border-bottom: 1px solid #e3e0e0;
+}
+
+.medical-history {
+  padding: 20px;
+  font-size: 15px;
+  margin-top: 60px;
+  font-weight: bolder;
+}
+
+.events {
+  margin-bottom: 10px;
+}
+
+.history-input-fields {
+  padding: 20px;
+  /* height: 70%; */
+}
+
+.input-fields {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  height: 30px;
+}
+
+input {
+  width: 160px;
+  padding: 10px;
+  margin-right: 10px;
+  width: 100%;
+}
+
+.photo{
+  padding: 20px;
+  height: 100px;
+}
+
+.preview-image{
+  width: 50px;
+  height:130px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+input {
+  border: 1px solid gray;
+  border-radius: 4px;
+  position: relative;
+  width: 200px;
+  margin: 10px;
+  /* line-height: 6ex; */
+}
+
+label {
+  position: absolute;
+  top: 0.2ex;
+  z-index: 1;
+  left: 2em;
+  background-color: white;
+  padding: 0 5px;
+  color: #0d73b7;
+
 }
